@@ -8,13 +8,13 @@ module.exports = merge(webpackConfiguration, {
   mode: 'development',
 
   /* Manage source maps generation process */
-  devtool: 'eval-source-map',
+  devtool: false,
 
   /* Development Server Configuration */
   devServer: {
     static: {
-      directory: environment.paths.output,
-      publicPath: '/',
+      directory: `${environment.paths.output}/pages`,
+      // publicPath: '/',
       watch: true,
     },
     client: {

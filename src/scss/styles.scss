@@ -1,0 +1,10 @@
+/* Config */
+@import 'config/vars';
+@import 'config/reset';
+@import 'config/print';
+@import 'config/fonts';
+@import 'config/mixins';
+
+/* Partials */
+@import '../templates/partials/header/index.scss';
+@import '../templates/partials/footer/index.scss';
